@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rivy/core/constants/app_font.dart';
-import 'package:rivy/core/constants/colors.dart';
 import 'package:rivy/core/constants/dimensions.dart';
 import 'package:rivy/core/utilities/extensions/size_extensions.dart';
 import 'package:rivy/core/utilities/size/size_config.dart';
@@ -179,16 +178,6 @@ class DecorationStyles {
 
   static BorderRadius get borderRadiusCircularAllSides => const BorderRadius.all(Radius.circular(3000));
 
-  // ==== Borders ====
-  static Border get borderCloudyGrey => Border.all(color: AppColor.cloudyGrey, width: 1);
-  static Border get borderLightGrey => Border.all(color: AppColor.lightGrey, width: 1);
-  static Border get borderWhite => Border.all(color: Colors.white, width: 4);
-  static Border get borderTropicalBlue => Border.all(color: AppColor.tropicalBlue, width: 1);
-  static Border get borderPaleBlue => Border.all(color: AppColor.paleBlue, width: 1);
-  static Border get borderGrey => Border.all(color: AppColor.greyWithOpacity, width: 1);
-  static Border get borderPrimary => Border.all(color: AppColor.primary, width: 1);
-  static Border get borderPrimary2 => Border.all(color: AppColor.primary, width: 0.8);
-
   // ==== BorderRadius (Top Only) ====
   static BorderRadius get borderRadiusCircularOnlyTop1 =>
       BorderRadius.vertical(top: Radius.circular(Dimensions.borderRadius1));
@@ -207,41 +196,4 @@ class DecorationStyles {
 
   static BorderRadius get borderRadiusCircularOnlyTop6 =>
       BorderRadius.vertical(top: Radius.circular(Dimensions.borderRadius6));
-
-  // ==== Shadows ====
-  static List<BoxShadow> get boxShadowVertical => [
-        BoxShadow(
-          blurRadius: 8.0,
-          color: Colors.black.withValues(alpha: 0.1),
-          offset: const Offset(0, 6),
-          blurStyle: BlurStyle.outer,
-        ),
-        BoxShadow(
-          blurRadius: 8.0,
-          color: Colors.black.withValues(alpha: 0.1),
-          offset: const Offset(0, -6),
-          blurStyle: BlurStyle.outer,
-        )
-      ];
-
-  static List<BoxShadow> get boxShadowVertical2 => const [
-        BoxShadow(
-          blurRadius: 3.0,
-          color: Color.fromARGB(16, 0, 0, 0),
-          offset: Offset(0, 4),
-          blurStyle: BlurStyle.outer,
-        ),
-        BoxShadow(
-          blurRadius: 1.0,
-          color: Color.fromARGB(16, 0, 0, 0),
-          offset: Offset(0, -4),
-          blurStyle: BlurStyle.outer,
-        ),
-        BoxShadow(
-          blurRadius: 3.0,
-          color: Color.fromARGB(16, 0, 0, 0),
-          offset: Offset(0, 6),
-          blurStyle: BlurStyle.outer,
-        )
-      ];
 }

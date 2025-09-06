@@ -1,6 +1,6 @@
 class VectorAssets {
   // Vector graphics => SVGS
-//   static String example = 'assets/svg/example.svg';
+  static String rivyFull = 'assets/svg/rivy-full.svg';
 }
 
 class ImageAssets {
