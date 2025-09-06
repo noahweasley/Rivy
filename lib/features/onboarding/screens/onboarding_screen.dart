@@ -5,7 +5,6 @@ import 'package:rivy/core/constants/app_style.dart';
 import 'package:rivy/core/constants/assets.dart';
 import 'package:rivy/core/constants/colors.dart';
 import 'package:rivy/core/constants/dimensions.dart';
-import 'package:rivy/core/utilities/extensions/scroll_physics_extension.dart';
 import 'package:rivy/core/utilities/size/size_config.dart';
 import 'package:rivy/core/widgets/annotated_status_bar.dart';
 import 'package:rivy/core/widgets/app_button.dart';
@@ -149,7 +148,7 @@ class OCarousel extends StatefulWidget {
   final int currentIndex;
   final List<OnBoardingItem> onboardingItems;
   final CarouselSliderController pageController;
-  final Function(int)? onPageChanged;
+  final void Function(int)? onPageChanged;
 
   const OCarousel({
     super.key,

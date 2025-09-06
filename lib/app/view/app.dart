@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:rivy/core/constants/app_theme.dart';
 import 'package:rivy/core/widgets/size_config_provider.dart';
 import 'package:rivy/features/onboarding/domain/bloc.dart';
 import 'package:rivy/features/onboarding/screens/onboarding_screen.dart';
@@ -13,9 +14,7 @@ class App extends StatelessWidget {
     return SizeConfigProvider(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          useMaterial3: true,
-        ),
+        theme: Themes.getTheme(Themes.darkThemeCode),
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         home: BlocProvider(

@@ -1,6 +1,6 @@
 class VectorAssets {
   // Vector graphics => SVGS
-//   static String blob1 = 'assets/svg/example.svg';
+//   static String example = 'assets/svg/example.svg';
 }
 
 class ImageAssets {

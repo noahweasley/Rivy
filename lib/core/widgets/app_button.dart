@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rivy/core/constants/app_style.dart';
-import 'package:rivy/core/constants/colors.dart';
 import 'package:rivy/core/constants/dimensions.dart';
 import 'package:rivy/core/widgets/platform_loader.dart';
 
