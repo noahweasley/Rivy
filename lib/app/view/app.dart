@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rivy/counter/counter.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:rivy/core/widgets/size_config_provider.dart';
+import 'package:rivy/features/onboarding/domain/bloc.dart';
+import 'package:rivy/features/onboarding/screens/onboarding_screen.dart';
 import 'package:rivy/l10n/l10n.dart';
 
 class App extends StatelessWidget {
@@ -7,16 +10,19 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+    return SizeConfigProvider(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          useMaterial3: true,
         ),
-        useMaterial3: true,
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: BlocProvider(
+          create: (_) => OnboardingBloc(),
+          child: const OnboardingScreen(),
+        ),
       ),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
     );
   }
 }

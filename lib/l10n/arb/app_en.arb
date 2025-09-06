@@ -1,7 +1,43 @@
 {
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
+  "@@locale": "en",
+  "financeForHomeTitle": "Finance to Power Your Home or Business",
+  "@financeForHomeTitle": {
+    "description": "Title for home/business financing section"
+  },
+  "financeForHomeDescription": "Get the energy solution you need on flexible terms that work for you.",
+  "@financeForHomeDescription": {
+    "description": "Description for home/business financing section"
+  },
+  "buyProductsTitle": "Buy Solar Product at Best Prices",
+  "@buyProductsTitle": {
+    "description": "Title for solar products section"
+  },
+  "buyProductsDescription": "Get quality solar products on your terms, flexible and affordable.",
+  "@buyProductsDescription": {
+    "description": "Description for solar products section"
+  },
+  "makeMoneySolarTitle": "Make Money From Your Solar Installation",
+  "@makeMoneySolarTitle": {
+    "description": "Title for monetization section"
+  },
+  "makeMoneySolarDescription": "Track your impact and turn it into carbon credits and real income.",
+  "@makeMoneySolarDescription": {
+    "description": "Description for monetization section"
+  },
+  "financeCommunitiesTitle": "Finance For Large Communities",
+  "@financeCommunitiesTitle": {
+    "description": "Title for community financing section"
+  },
+  "financeCommunitiesDescription": "Fund and scale micro-grids quickly, affordably, and sustainably.",
+  "@financeCommunitiesDescription": {
+    "description": "Description for community financing section"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Text for next button"
+  },
+  "skip": "Skip",
+  "@skip": {
+    "description": "Text for skip button"
+  }
 }
