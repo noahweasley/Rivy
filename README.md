@@ -18,7 +18,7 @@
 
 ---
 
-## Getting Started 🚀
+## Getting Started
 
 This project contains 3 flavors:
 
@@ -63,7 +63,7 @@ flutter pub get
 
 ---
 
-## Running the App 📱
+## Running the App
 
 To run the application in debug mode on an emulator or connected device:
 
@@ -73,7 +73,7 @@ flutter run --flavor development --target lib/main_development.dart
 
 ---
 
-## Running Tests 🧪
+## Running Tests
 
 To run all unit and widget tests use the following command:
 
@@ -93,7 +93,7 @@ $ open coverage/index.html
 
 ---
 
-## Building the App 📦
+## Building the App
 
 ### Android
 
