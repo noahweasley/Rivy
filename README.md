@@ -123,7 +123,7 @@ Rivy follows the **Very Good CLI** structure, integrated with Flutter best pract
 
 - **flutter_bloc** → State management
 - **equatable** → Value equality
-- **flutter_svg** → Persistence for bloc state
+- **flutter_svg** → Add SVG to app
 - **intl** → Internationalization utilities
 - **very_good_analysis** → Linting rules
 
