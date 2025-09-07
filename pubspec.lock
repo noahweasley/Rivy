@@ -166,6 +166,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "9.1.1"
+  flutter_image_test_utils:
+    dependency: "direct main"
+    description:
+      name: flutter_image_test_utils
+      sha256: "91b9007beb2d7d6e4a9d86775bbe21fa681f0a4b95d9518756edfa58aaad1189"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   flutter_localizations:
     dependency: "direct main"
     description: flutter
@@ -179,6 +187,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.1"
+  flutter_svg_test:
+    dependency: "direct main"
+    description:
+      name: flutter_svg_test
+      sha256: bfc0114ef604770d5c5dfd993c0ce7e8a5234c894361adee52dad98f6db53185
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.3"
   flutter_test:
     dependency: "direct dev"
     description: flutter

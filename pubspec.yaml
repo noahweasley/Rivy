@@ -13,9 +13,11 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
+  flutter_image_test_utils: ^1.0.0
   flutter_localizations:
     sdk: flutter
   flutter_svg: ^2.2.1
+  flutter_svg_test: ^1.0.3
   intl: ^0.20.2
   smooth_page_indicator: ^1.2.1
 

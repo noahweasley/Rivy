@@ -19,7 +19,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  late final Timer? timer;
+  late final Timer timer;
 
   @override
   void initState() {
@@ -39,8 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void dispose() {
     super.dispose();
-    timer?.cancel();
-    timer = null;
+    timer.cancel();
   }
 
   @override

@@ -10,6 +10,7 @@ import 'package:rivy/features/onboarding/domain/onboarding_event.dart';
 import 'package:rivy/features/onboarding/models/onboarding_item.dart';
 
 class OCarousel extends StatefulWidget {
+  final bool autoPlay;
   final void Function(int)? onPageChanged;
   final int currentIndex;
   final List<OnBoardingItem> onboardingItems;
@@ -17,6 +18,7 @@ class OCarousel extends StatefulWidget {
 
   const OCarousel({
     super.key,
+    this.autoPlay = true,
     required this.currentIndex,
     required this.onboardingItems,
     required this.pageController,
@@ -30,7 +32,6 @@ class OCarousel extends StatefulWidget {
 class _OCarouselState extends State<OCarousel> {
   @override
   void didChangeDependencies() {
-    // Preload images to avoid flicker
     for (var item in widget.onboardingItems) {
       precacheImage(AssetImage(item.img), context);
     }
@@ -57,7 +58,7 @@ class _OCarouselState extends State<OCarousel> {
         aspectRatio: 16 / 9,
         height: SizeConfig.screenHeight! * heightFactor,
         viewportFraction: 1,
-        autoPlay: true,
+        autoPlay: widget.autoPlay,
         disableCenter: true,
         onPageChanged: (index, _) {
           bloc.add(OnboardingPageChanged(index));
